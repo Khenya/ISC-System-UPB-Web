@@ -29,7 +29,7 @@ resource "aws_security_group" "isc_web_sg" {
   }
 }
 resource "aws_key_pair" "web-isc-ssh" {
-  key_name   = "web-isc-ssh" 
+  key_name   = "web-isc-ssh-v2"
   public_key = file("id_rsa.pub")
 }
 
