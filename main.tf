@@ -28,8 +28,8 @@ resource "aws_security_group" "isc_web_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-resource "aws_key_pair" "web-isc-ssh" {
-  key_name   = "web-isc-ssh" 
+resource "aws_key_pair" "web_isc_ssh_new" {
+  key_name   = "web-isc-ssh-new"
   public_key = file("id_rsa.pub")
 }
 
