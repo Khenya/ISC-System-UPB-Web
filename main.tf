@@ -37,7 +37,7 @@ resource "aws_key_pair" "web_isc_ssh_new" {
 resource "aws_instance" "isc-web" {
   ami           = "ami-01816d07b1128cd2d" 
   instance_type = "t2.micro" 
-  key_name      = aws_key_pair.web-isc-ssh.key_name
+  key_name      = aws_key_pair.web-isc-ssh-new.key_name
 
   vpc_security_group_ids = [aws_security_group.isc_web_sg.id]
 
